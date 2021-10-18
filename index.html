@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Html studies from Udemy - topics: span, div</title>
+    </head>
+
+    <body>
+        <div id="group1">
+            <h2 id="heading">Heading that we want to add to our <span id="span1">span element</span></h2>
+            <p id="text">Text</p>
+            <img id="image" src="star.png" alt="star" width="50" height="50">
+        </div>
+
+        <form action="nameInput">
+            <!-- non-breaking space character: &nbsp; that is a space between them!-->
+            Please enter your first name: &nbsp;
+            <input type="text"> <br>
+            Please enter your family name: <br>
+            <input type="text"> <br>
+            <input type="color"> <br>
+            <input type="range"> <br>
+            <input type="checkbox"> <br>
+            <!-- default language is system language! so change the language to change text !!! -->
+            <input type="file"> <br>
+            <input type="date"> <br>
+        </form>
+        <form>
+            <input type="text" id="userInput">
+            <button onclick="displayMessage()">Button</button> <br>
+            <input type="text">
+            <button type="reset">ResetButton</button> <br>
+            <input type="text">
+            <button type="submit">SubmitButton</button>
+        </form>
+
+        <script>
+            function displayMessage() {
+                var text = document.getElementById("userInput").value;
+                alert(text);
+            }
+        </script>
+
+        <textarea rows="12" cols="40">
+            Default text
+        </textarea>
+
+        <select>
+            <option>Option1</option>
+            <option>Option2</option>
+            <option>Option3</option>
+        </select>
+
+        <select>
+            <option>Option1</option>
+            <option selected>Option2</option>
+            <option disabled>Option3</option>
+        </select>
+        
+        <style>
+            #span1{
+                font-style: italic;
+                color: red;}
+        </style>
+    </body>
+</html>
